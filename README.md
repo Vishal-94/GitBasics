@@ -36,6 +36,18 @@ Create a commit with the staged file(s)
         git remote add <remote_name> <remote_repo_url>
    ```
 
+    ### Publish your changes
+        We use `git push` command for publishing our local changes to the remote repo
+        `git push <remote_name> <local_branch/source_branch>:<remote_branch/target_branch>`
+        `git push origin master:master`
+        `git push origin master`
+
+    ### Receive remote changes
+        - We use `git pull` command for receiving latest changes from the remote repo into local repo.
+        `git pull <remote_name> <remote_branch_name>`
+        `git pull origin master`
+        - Git pull command first fetches the changes from the remote then merge these changes into local branch.
+
 ## Git stash
 - Creates a temporary commit
 - Move files from the working tree to the stash tree/area. Making working tree clean.
