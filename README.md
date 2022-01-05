@@ -57,3 +57,5 @@ Create a commit with the staged file(s)
     `git stash pop [<stash_id>]` to apply the stash to the current working tree then drop it
     `git stash show <stash_id>` to show the summary of changes/files saved in the stash
     `git stash drop <stash_id>` to drop the stash
+
+## gitignore file
