@@ -59,3 +59,10 @@ Create a commit with the staged file(s)
     `git stash drop <stash_id>` to drop the stash
 
 ## gitignore file
+    gitignore file helps in ignoring some file, folders or patterns that git should not track.
+
+## git restore
+    Git restore commands discard the changes from the working tree.
+    eg. `git restore <file>` `git restore README.md`
+    Git restore with staged option remove file(s) from the staging area and put it back in working tree.
+    eg. `git restore --staged <file>` `git restore --staged README.md`
