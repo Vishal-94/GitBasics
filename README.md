@@ -67,3 +67,17 @@ Git restore commands discard the changes from the working tree.
     eg. `git restore <file>` `git restore README.md`
     Git restore with staged option remove file(s) from the staging area and put it back in working tree.
     eg. `git restore --staged <file>` `git restore --staged README.md`
+
+## Git reset
+Git reset command is used for dropping one or more commit from the history. 
+Note: Use git reset when the commits are still in your local repo.
+There are three options for doing git reset.
+--soft
+--mixed (default)
+--hard
+eg. `git reset HEAD~1` drops the last commit and keep the changes in working tree
+`git reset --soft HEAD~1` drops the last commit and keep the changes in staging area
+`git reset --hard HEAD~1` drops the last commit and the changes as well.
+
+### Further reading
+- Reset vs Rervert vs Checkout [here](https://sillevl.gitbooks.io/git/content/advanced/reset-checkout-revert/)
