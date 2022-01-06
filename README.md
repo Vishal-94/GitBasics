@@ -89,5 +89,30 @@ Git revert command is used for dropping changes from a commit. It retains the ch
 
 eg. `git revert HEAD~1` drops the changes from last commit and create a new revert commit.
 
+## Working with branch
+- Create a new branch `git branch <new_branch_name>`
+- Swith to new branch `git checkout <new_branch_name>`
+- Create a new branch using checkout command `git checkout -b <new_branch_name>`. This will create a new branch and swith to it as well.
+- Create a new branch using checkout command with respect to a remote branch. `git checkout <remote_branch_name>`
+- List local branches `git branch`
+- List remote branches `git branch -r`
+- List all branches `git branch -a`
+
+## Working with remote
+- Add a remote repo `git remote add <remote_name> <remote_repo_address>`
+- Remove a remote `git remote remove <remote_name>`
+- View remote details `git remote -v`
+
+## Combine changes from branches
+- Merge: merge changes from development branch to master branch eg
+`git checkout master`
+`git merge development`
+
+- Rebase: rebase branch development with master branch eg.
+`git checkout development`
+`git rebase master`
+
 ### Further reading
 - Reset vs Rervert vs Checkout [here](https://sillevl.gitbooks.io/git/content/advanced/reset-checkout-revert/)
+- Merge vs Rebase [here](https://sillevl.gitbooks.io/git/content/advanced/merging-vs-rebasing/)
+- Git tutorial [here](https://www.atlassian.com/git/tutorials/what-is-version-control)
