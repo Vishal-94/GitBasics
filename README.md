@@ -81,6 +81,9 @@ eg. `git reset HEAD~1` drops the last commit and keep the changes in working tre
 ## QA Branch changes
 I am making changes in qa branch.
 
+## Development branch changes
+this could result in a conflic
+
 ## Git revert
 Git revert command is used for dropping changes from a commit. It retains the changes done after the dropped commit. Also, it creates a new commit with the revert commit information.
 
